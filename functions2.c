@@ -18,8 +18,8 @@ long fun1 ( data a[], int size ){
 }
 
 char* fun2 ( data a[], int size ){
-  printf("start of fun2\n");
-  char *foo = fun2(a,size+1);
+ 
+  char *foo = malloc((size+1)*sizeof(char));
   *(foo+size)='\0'; //end of string
   int j=0;
   for(j=0;j<size;j++){
