@@ -8,6 +8,9 @@
  */
 
 
+/*
+ *fun1 sums up all .i values in an array of 'data' type structures and returns the sum 
+*/
 long fun1 ( data a[], int size ){
   int x ;
   long val = 0;
@@ -17,6 +20,9 @@ long fun1 ( data a[], int size ){
   return val;
 }
 
+/*
+ * fun2 returns a string that concatenates chars stored in .c field in an array of 'data' type structures
+ */
 char* fun2 ( data a[], int size ){
  
   char *foo = malloc((size+1)*sizeof(char));
